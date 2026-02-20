@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Manrope:wght@300;400;500;600&display=swap');
+
+.font-heading {
+    font-family: 'Tenor Sans', sans-serif;
+}
+
+.font-body {
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Remove default text-align center */
+.App {
+    text-align: left;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom selection */
+::selection {
+    background-color: #1C1C1C;
+    color: white;
+}
+
+/* Hide scrollbar but keep functionality */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Line clamp utilities */
+.line-clamp-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Focus styles */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+/* Button transitions */
+button {
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Image loading placeholder */
+img {
+    background-color: #F5F5F5;
+}
+
+/* Aspect ratio fallback */
+.aspect-square {
+    aspect-ratio: 1 / 1;
+}
+
+.aspect-video {
+    aspect-ratio: 16 / 9;
+}
+
+/* Animation for cart badge */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.animate-pulse-once {
+    animation: pulse 0.3s ease-in-out;
+}
